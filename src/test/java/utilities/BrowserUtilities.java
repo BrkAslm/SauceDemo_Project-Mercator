@@ -54,11 +54,11 @@ public class BrowserUtilities {
     /**
      * method will wait until you click to the element
      *
-     * @return current year: 2023
+     * @return current year: 2025
      * @author burak
      * @since 19.03.2025
      */
-    public static String getCurrentYear() {//2023
+    public static String getCurrentYear() {//2025
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy");
         Date date = new Date();
         return sdf.format(date);

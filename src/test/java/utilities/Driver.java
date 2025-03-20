@@ -30,13 +30,13 @@ public class Driver {
     }
 
     /*
-    Making our 'driver' instance private so that it is not reachable from outside the class.
-    We make it static, because we want it to run before everything else, and also we will use it in a static method
+    Making my 'driver' instance private so that it is not reachable from outside the class.
+    I make it static, because we want it to run before everything else, and also we will use it in a static method
      */
     private static ThreadLocal<WebDriver> driverPool = new ThreadLocal<>();
 
     /*
-    Creating re-usable utility method that will return same 'driver' instance everytime we call it.
+    Creating re-usable utility method that will return same 'driver' instance everytime I call it.
      */
     public static WebDriver getDriver() {
         HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
@@ -83,13 +83,13 @@ public class Driver {
             synchronized (Driver.class) {
 
             /*
-            We read our browser type from configuration.properties file using
-            .getProperty method we create in ConfigurationReader class.
+            I read my browser type from configuration.properties file using
+            .getProperty method I create in ConfigurationReader class.
              */
                 // String browserType = ConfigurationReader.getProperty("browser");
 
             /*
-            Depending on the browser type our switch statement will determine
+            Depending on the browser type my switch statement will determine
             to open specific type of browser/driver
              */
                 switch (browserType) {
@@ -142,7 +142,7 @@ public class Driver {
     }
 
     /*
-    This method makes sure we have some form of driver session or driver id has.
+    This method makes sure I have some form of driver session or driver id has.
     Either null or not null it must exist.
      */
     public static void closeDriver() {
