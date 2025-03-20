@@ -40,14 +40,6 @@ public class US_001_LoginAndPurchase extends CommonPage {
         getLoginPage().loginButton.click();
     }
 
-//    @When("user selects an item on the inventory page")
-//    public void userSelectsAnItemOnTheInventoryPage() {
-//        itemName.add(getHomePage().productName.get(0).getText());
-//        itemPrice.add(Double.parseDouble(getHomePage().productPrice.get(0).getText().replace("$","")));
-//        getHomePage().addtoCart.get(0).click();
-//
-//    }
-
     @When("user selects the highest priced item on the inventory page")
     public void userSelectsHighestPricedItemOnTheInventoryPage() {
         List<WebElement> productNames = getHomePage().productName;

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="7.042">
-    <testcase classname="US_001 Login And Purchase" name="user selects the most expensive item and checkout succesfully" time="3.791">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="8.218">
+    <testcase classname="US_001 Login And Purchase" name="user selects the most expensive item and checkout succesfully" time="5.114">
         <system-out><![CDATA[Given user goes to login page...............................................passed
 And user login with the username and password "standard_user" and "secret_sauce".passed
 When user selects the highest priced item on the inventory page.............passed
@@ -18,7 +18,7 @@ When user clicks on finish button...........................................pass
 Then user is able to see the "Thank you for your order!" message............passed
 ]]></system-out>
     </testcase>
-    <testcase classname="US_001 Login And Purchase" name="user checks the selected items' names and prices are same in the cart page" time="1.695">
+    <testcase classname="US_001 Login And Purchase" name="user checks the selected items' names and prices are same in the cart page" time="1.659">
         <system-out><![CDATA[Given user goes to login page...............................................passed
 And user login with the username and password "standard_user" and "secret_sauce".passed
 When user selects items on the inventory page...............................passed
@@ -26,7 +26,7 @@ When user clicks on the basket icon to go to the basket page................pass
 Then user is able to see items' names and totals are equal on the cart......passed
 ]]></system-out>
     </testcase>
-    <testcase classname="US_002 Failed Login" name="User going to the main page by using the page url" time="1.459">
+    <testcase classname="US_002 Failed Login" name="User going to the main page by using the page url" time="1.36">
         <system-out><![CDATA[Given user goes to login page...............................................passed
 Given user login with the username and password "standard_user" and "secret_password".passed
 Given assertion for unsuccesful login.......................................passed

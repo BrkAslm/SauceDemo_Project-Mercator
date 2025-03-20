@@ -5,7 +5,7 @@ Feature: US_001 Login And Purchase
     And user login with the username and password "standard_user" and "secret_sauce"
 
   @UI
-  @smokem
+  @smoke
   @login
   Scenario: user selects the most expensive item and checkout succesfully
     When user selects the highest priced item on the inventory page
@@ -26,7 +26,6 @@ Feature: US_001 Login And Purchase
   @smoke
   @login
   Scenario: user checks the selected items' names and prices are same in the cart page
-
     When user selects items on the inventory page
     When user clicks on the basket icon to go to the basket page
     Then user is able to see items' names and totals are equal on the cart
